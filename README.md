@@ -1,0 +1,3 @@
+# R Bug: Incorrect NaN instead of NA return in mean calculation
+
+This repository demonstrates a subtle bug in an R function designed to calculate the mean of a numeric vector.  The function correctly handles empty vectors and vectors containing a mix of numeric and NA values. However, it incorrectly returns `NaN` instead of `NA` when the input vector contains only `NA` values.  The solution provided corrects this behavior.
